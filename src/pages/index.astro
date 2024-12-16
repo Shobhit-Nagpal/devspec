@@ -6,44 +6,37 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 <!doctype html>
 <html lang="en">
-  <head>
-    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-  </head>
-  <body>
-    <Header />
-    <main class="container mx-auto px-4 max-w-3xl py-12">
-      <h1 class="text-4xl font-bold mb-6">DevSpec</h1>
-      <p class="text-xl mb-8">
-        A straightforward collection of must-have concepts for building developer tools. 
-        The blueprint, not the implementation.
-      </p>
-
-      <div class="grid gap-6">
-        <section class="p-6 bg-gray-50 rounded-lg">
-          <h2 class="text-2xl font-semibold mb-4">Latest Concepts</h2>
-          <ul class="space-y-3">
-            <li>
-              <a href="/concepts/logger" class="text-blue-600 hover:underline">Logger Specification →</a>
-            </li>
-            <li>
-              <a href="/concepts/plugin-system" class="text-blue-600 hover:underline">Plugin System Architecture →</a>
-            </li>
-            <li>
-              <a href="/concepts/interpreter" class="text-blue-600 hover:underline">Interpreter Design →</a>
-            </li>
-          </ul>
-        </section>
-
-        <section class="p-6 bg-gray-50 rounded-lg">
-          <h2 class="text-2xl font-semibold mb-4">Why DevSpec?</h2>
-          <p>
-            Focus on understanding core concepts before diving into implementation. 
-            Each specification outlines the essential features and considerations 
-            for building robust developer tools.
-          </p>
-        </section>
-      </div>
-    </main>
-    <Footer />
-  </body>
+ <head>
+   <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+ </head>
+ <body>
+   <Header />
+   <main class="container mx-auto px-4 max-w-3xl py-12">
+     <h1 class="text-4xl font-bold mb-6">DevSpec</h1>
+     <p class="text-xl mb-8">
+       A straightforward collection of must-have concepts for building developer tools. 
+       The blueprint, not the implementation.
+     </p>
+     <div class="grid gap-6">
+       <section class="p-6 bg-gray-50 rounded-lg">
+         <h2 class="text-2xl font-semibold mb-4">Upcoming Concepts</h2>
+         <ul class="space-y-3 text-gray-600">
+           <li class="flex items-center">
+             Logger Specification
+             <span class="ml-2 text-xs bg-gray-200 px-2 py-1 rounded">Coming soon</span>
+           </li>
+         </ul>
+       </section>
+       <section class="p-6 bg-gray-50 rounded-lg">
+         <h2 class="text-2xl font-semibold mb-4">Why DevSpec?</h2>
+         <p>
+           Focus on understanding core concepts before diving into implementation. 
+           Each specification outlines the essential features and considerations 
+           for building robust developer tools.
+         </p>
+       </section>
+     </div>
+   </main>
+   <Footer />
+ </body>
 </html>
