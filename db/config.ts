@@ -1,11 +1,11 @@
-import { column, defineDb, defineTable } from "astro:db";
+import { column, defineDb, defineTable, NOW } from "astro:db";
 
 // https://astro.build/db/config
 
 const Emails = defineTable({
   columns: {
-    email: column.text({ primaryKey: true }),
-    created_at: column.date(),
+    email: column.text({ primaryKey: true, optional: false }),
+    created_at: column.date({ default: NOW }),
   },
 });
 
