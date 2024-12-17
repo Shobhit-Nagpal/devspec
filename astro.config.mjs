@@ -7,11 +7,8 @@ import tailwind from '@astrojs/tailwind';
 
 import db from '@astrojs/db';
 
-import vercel from '@astrojs/vercel';
-
 // https://astro.build/config
 export default defineConfig({
   site: 'https://example.com',
   integrations: [mdx(), sitemap(), tailwind(), db()],
-  adapter: vercel(),
 });
