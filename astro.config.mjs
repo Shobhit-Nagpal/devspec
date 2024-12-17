@@ -9,6 +9,7 @@ import db from '@astrojs/db';
 
 // https://astro.build/config
 export default defineConfig({
+  output: "server",
   site: 'https://example.com',
   integrations: [mdx(), sitemap(), tailwind(), db()],
 });

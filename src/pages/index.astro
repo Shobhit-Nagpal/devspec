@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import NewsletterSignup from '../components/NewsletterSignup.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 ---
 <!doctype html>
@@ -17,7 +18,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
        A straightforward collection of must-have concepts for building developer tools. 
        The blueprint, not the implementation.
      </p>
-     <div class="grid gap-6">
+     <div class="grid gap-6 mb-8">
        <section class="p-6 bg-gray-50 rounded-lg">
          <h2 class="text-2xl font-semibold mb-4">Upcoming Concepts</h2>
          <ul class="space-y-3 text-gray-600">
@@ -35,8 +36,13 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
            for building robust developer tools.
          </p>
        </section>
-     </div>
-   </main>
-   <Footer />
- </body>
+      </div>
+
+      <section class="p-6 rounded-lg">
+        <NewsletterSignup />
+      </section>
+
+    </main>
+    <Footer />
+  </body>
 </html>
